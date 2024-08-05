@@ -59,8 +59,8 @@
       <el-space wrap>
         <div v-for="(item, index) in data.icondata" :key="index" class="card" @click="handleClick(item.name + '.png')">
           <el-image lazy class="card_img" :src="'https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/public/' + 'icon/' + item.name + '.png'" />
-          <!--默认使用从本地读取图标展示在网页上-->
-          <!-- 从CDN读取图片展示在网页上, 直接把data.publicPath链接替换CDN链接即可，注意添加链接时需要加入单引号-->
+          <!--默认使用从GitHubProxy读取图标展示在网页上-->
+          <!-- 从本地读取图片展示在网页上, 直接把'https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/public/'这个链接替换为data.publicPath即可，注意更换时需要删除单引号-->
           <!--用法示例：:src="data.publicPath + 'icon/' + item.name + '.png'" />-->
           <div class="card_txt" @click="openUrl(item.course)">
             {{ item.name }}
@@ -185,9 +185,9 @@ export default defineComponent({
           const path = `image/icon/${url}`;
           // 123云盘的图片路径，这里默认是icon目录，改成自己的目录
           const timestamp = 8299472400;
-          // 123云盘的过期时间戳，这里默认时间到2233-01-01 01:00:00
+          // 123云盘的过期时间戳，这里默认时间到2233-01-01 01:00:00，建议修改为自己需要的时间戳
           const rand = Math.floor(Math.random() * 1000000); // 生成一个随机数
-          const authKey = 'xxxxxxxx';
+          const authKey = '123321qwe';
           // 123云盘鉴权密钥
 
           // 计算md5hash
