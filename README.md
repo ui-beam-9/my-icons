@@ -31,20 +31,20 @@
 * 抛弃原来的else if判断，改为数组判断
 * 当选择了123云盘时，自动鉴权并生成直链URL
 * 当未选择来源时，提示选择来源后重试
-* 当浏览器权限未开启时，弹窗提示开启浏览器权限
+* 当浏览器权限未开启时，弹窗提示开启网站权限
 * 把原来的代码做了一些小优化
 
 # 三、展示
 
-![alt text](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/main/src/assets/image-1.png)
+![效果展示](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/src/assets/image-1.png)
 
-![alt text](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/main/src/assets/image-2.png)
+![提示选择来源后重试](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/src/assets/image-2.png)
 
-![alt text](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/main/src/assets/image-3.png)
+![弹窗提示开启网站权限](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/src/assets/image-3.png)
 
-![alt text](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/main/src/assets/image-4.png)
+![多个来源选择](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/src/assets/image-4.png)
 
-![alt text](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/main/src/assets/image-5.png)
+![123云盘直链输出](https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/src/assets/image-5.png)
 # 四、使用
 
 - 点击相应图标即可获取URL
@@ -88,9 +88,3 @@ npm run build
 docker run -d --name nginx -p 80:80 -v /www/my-icons/dist:/usr/share/nginx/html nginx
 ```
 7. 打开浏览器访问http://localhost:3005
-
-
-
-
-
-

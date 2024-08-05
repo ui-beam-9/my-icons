@@ -58,10 +58,10 @@
       </div>
       <el-space wrap>
         <div v-for="(item, index) in data.icondata" :key="index" class="card" @click="handleClick(item.name + '.png')">
-          <el-image lazy class="card_img" :src="data.publicPath + 'icon/' + item.name + '.png'" />
+          <el-image lazy class="card_img" :src="'https://mirror.ghproxy.com/https://raw.githubusercontent.com/ui-beam-9/my-icons/master/public/' + 'icon/' + item.name + '.png'" />
           <!--默认使用从本地读取图标展示在网页上-->
           <!-- 从CDN读取图片展示在网页上, 直接把data.publicPath链接替换CDN链接即可，注意添加链接时需要加入单引号-->
-          <!--用法示例：:src="'https://cdn.jsdelivr.net/gh/user/repo@version/file' + 'icon/' + item.name + '.png'" />-->
+          <!--用法示例：:src="data.publicPath + 'icon/' + item.name + '.png'" />-->
           <div class="card_txt" @click="openUrl(item.course)">
             {{ item.name }}
           </div>
